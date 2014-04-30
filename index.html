@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048之欢乐17班</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="style/ai.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="score-container">0</div>
+    </div>
+    <p class="game-intro">黑人无极限，属于<strong>惠一中17班</strong>的2048</p>
+
+    <div class='controls'>
+      <div id='hint-button-container'>
+        <button id='hint-button' class='ai-button'>Hint</button>
+      </div>
+      <div id='feedback-container'> </div>
+      <div id='run-button-container'>
+        <button id='run-button' class='ai-button'>Auto-Run</button>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+      
+    </div>
+    <hr>
+    <div>
+      <p><strong class="important">Order:</strong></p>
+      <img src="img/img-2.jpg" style="width:60px;"/>
+      <img src="img/img-4.jpg" style="width:60px;"/>
+      <img src="img/img-8.jpg" style="width:60px;"/>
+      <img src="img/img-16.jpg" style="width:60px;"/>
+      <img src="img/img-32.jpg" style="width:60px;"/>
+      <img src="img/img-64.jpg" style="width:60px;"/>
+      <img src="img/img-128.jpg" style="width:60px;"/>
+      <img src="img/img-256.jpg" style="width:60px;"/>
+      <img src="img/img-512.jpg" style="width:60px;"/>
+      <img src="img/img-1024.jpg" style="width:60px;"/>
+      <img src="img/img-2048.jpg" style="width:60px;"/>
+    </div>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong></p><p>此版本是由 <strong class="important">@钟昀霖</strong>->提供创意 <strong class="important">@罗思成</strong>-> 代码修改, 联合完成的.(花了2个小时啊喂)
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Further:</strong></p>
+    <p>如果有什么不合适的照片,请联系我们修改,也欢迎大家提供更好的idea.
+    可能还会有下一版本(将加入更多神秘人物)
+    </p>
+    <hr>
+    <p><strong class="important">Email:</strong>&nbspluosch@mail2.sysu.edu.cn</p>
+    <hr>
+    <p><strong class="important">Download:&nbsp</strong><a href="http://pan.baidu.com/s/1eQvbWnK" style="text-decoration:none">项目下载</a></p>
+  </div>
+  <!-- 多说评论框 start -->
+	<div class="ds-thread"></div>
+  <!-- 多说评论框 end -->
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"luosch"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+  </script>
+  <!-- 多说公共JS代码 end -->
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/hammer.min.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
